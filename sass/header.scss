@@ -1,0 +1,108 @@
+@import "variaveis.scss";
+
+.container_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $azul_escuro_do_depoimentos;
+    padding: 1% 0;
+
+    .card_nav_bar{
+        
+        a{
+            margin-left: 1rem;
+            text-decoration: none;
+            color: $gray;
+            font: 400 14px 'Open Sans', sans-serif;
+        }
+    }
+}
+
+//colocarei o main da parte de informação aqui para facilitar a manutenção no topo pois o header foi bem simples
+
+.container_intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../images/bg-curvy-desktop.svg") bottom no-repeat;
+    padding-bottom: 10%;
+    background-color: $azul_escuro_do_depoimentos;
+
+    .card_intro_img{
+        img{
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+    }
+    .card_conteudo{
+        width: 50%;
+        text-align: center;
+        color: $white;
+
+        h1{
+            font: 700 30px 'Barlow', sans-serif;
+            width: 72%;
+            margin: 0 auto;
+            
+        }
+        p{
+            margin: 20px auto;
+            width: 65%;
+            font: 400 14px 'Open Sans', sans-serif;
+            line-height: 22px;
+        }
+    }
+    //fechamento dos efeitos em card conteudo
+
+    //abrindo card link do couteudo
+    .card_conteudo_link{
+        margin: 20px auto;
+
+        a{
+            background: $blue;
+            padding: 10px 60px;
+            border-radius: 20px;
+            color: $white;
+            text-decoration: none;
+            font: 400 14px 'Open Sans', sans-serif;
+
+            &:hover{
+                background: $cian;
+            }
+        }
+    }
+    //fechamento da class card link
+}
+
+@media(max-width: 800px){
+    .container_header{
+        .card_logo_header{
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+    //responsivo da sessao intro
+    .container_intro{
+        .card_intro_img{
+            img{
+                width: 90%;
+            }
+        }
+        .card_conteudo{
+            width: 100%;
+
+            h1{
+                font: 700 24px 'Barlow', sans-serif;
+                width: 89%;
+                margin: 0 auto;
+                
+            }
+            p{
+                width: 90%;
+            }
+        }
+    }
+}

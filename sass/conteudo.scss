@@ -1,0 +1,259 @@
+@import "variaveis.scss";
+
+.container_sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    background: $azul_escuro_main;
+    color: $white;
+    padding: 0 0 10% 0;
+    //editando os cards que tem dentro do container sobre
+    .card_sobre{
+        width: 40%;
+        text-align: center;
+        margin-top: 9%;
+
+        .box_text{
+            width: 70%;
+            margin: 10% auto;
+
+            p{
+                font: 400 14px 'Open Sans', sans-serif;
+                margin-top: 10px;
+            }
+            h3{
+                font: 700 18px 'Barlow', sans-serif;
+            }
+        }
+    }
+}
+
+
+//estilo dos produtos
+#produto{
+    background: $azul_escuro_main;
+}
+.container_produto{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto;
+
+    .card_produto_informacao{
+        margin: 100px auto 0 auto;
+        width: 45%;
+
+        .box_text{
+            margin: 20px 0;
+
+            p{font: 400 14px 'Open Sans', sans-serif;color: $gray;}
+            h2{font: 700 45px 'Barlow', sans-serif;color: $white;}
+            a{
+                color: $cian;
+                font: 400 16px 'Open Sans', sans-serif;
+                text-decoration: none;
+                padding: 0  0px 5px 20px;
+                border-bottom: 1px solid $cian;
+                &::after{
+                    content: url("../images/icon-arrow.svg");                
+                }
+            }
+        }
+    }
+}
+
+//estilo dos cards clientes
+.container_relato{
+    padding: 10% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: $azul_escuro_main;
+
+    .card_clientes{
+        width: 25%;
+        padding: 40px 50px;
+        background: $azul_escuro_do_depoimentos;
+        color: $white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px $azul_escuro_footer;
+
+        &:hover{
+            box-shadow: 25px 25px 10px$azul_escuro_footer;
+        }
+
+        .box_text_client{
+            p{
+                font: 400 14px 'Open Sans', sans-serif;
+            }
+        }
+    }
+    //estilo do container client com foto de perfil
+    .box_container_perfil{
+        display: flex;
+        margin-top: 20px;
+        .conteudo_img{
+            img{
+                width: 35px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+        //estilo do nome dos clients
+        .box_conteudo_text{
+        
+            h4{
+                font: 700 12px 'Open Sans', sans-serif;
+
+                &:hover{
+                    color: $cian;
+                }
+            }
+            p{
+                color: $gray;
+                font:400 11px  'Open Sans', sans-serif;
+
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+//estilo do input flutuante
+
+.container_get{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient($azul_escuro_main 50%,$azul_escuro_footer 50%);
+
+    //estilizando o card flutuante
+    .card_get{
+        width: 50%;
+        padding: 40px 60px;
+        background: $azul_escuro_do_depoimentos;
+        color: $white;
+        box-shadow: 10px 10px 10px $azul_escuro_footer;
+
+        &:hover{box-shadow: 0 0 10px 15px $azul_escuro_footer;}
+
+        .box_text_get{
+            //estilizando o conteudo dentro do text get
+            h2{font: 700 27px 'Barlow', sans-serif;}
+            p{
+                margin: 30px auto;
+                font: 400 14px 'Open Sans', sans-serif;
+            }
+        }
+
+        .box_form{
+            
+            //estilizando o input email
+            input[type="email"]{
+                width: 60%;
+                border-radius: 40px;
+                font-size: 18px;
+                padding: 15px;
+                border: none;
+                margin-right: 20px;
+            }
+            //estilizando o input submit da pagina
+            input[type="submit"]{
+                background: $blue;
+                padding: 15px 25px;
+                border-radius: 20px;
+                border: none;
+                color: $white;
+                font: 600 16px 'Barlow', sans-serif;
+
+                &:hover{
+                    background: $cian;
+                }
+            }
+        }
+    }
+}
+//responsivo de mobile abaixo de 900px é esse estilo
+@media(max-width: 900px){
+    .container_sobre{
+        flex-direction: column;
+        width: 100%;
+        //editando os cards que tem dentro do container sobre
+        .card_sobre{
+            width: 100%;
+            .box_text{
+                width: 90%;
+            }
+        }
+    }
+
+    //responsivo dos produtos
+    .container_produto{
+        flex-direction: column;
+        width: 100%;
+    
+        .card_img_produto{
+            img{
+                width: 100%;
+            }
+        }
+        .card_produto_informacao{
+            margin: 0 15px 0 0;
+            width: 100%;
+    
+            .box_text{
+                margin: 20px 0;
+                h2{font: 700 25px 'Barlow', sans-serif;}
+            }
+        }
+    }
+
+    //responsivo da sessao relatos de clentes
+    .container_relato{
+        flex-direction: column;
+
+        .card_clientes{
+            width: 80%;
+            padding: 20px 30px;
+        }
+    }
+    
+
+    //estilo do card get early
+    //estilo do input flutuante
+
+    .container_get{
+
+        //estilizando o card flutuante
+        .card_get{
+            width: 70%;
+            padding: 40px;
+
+            .box_text_get{
+                //estilizando o conteudo dentro do text get
+                h2{font: 700 20px 'Barlow', sans-serif;}
+            }
+
+            .box_form{
+                width: 100%;
+                //estilizando o input email
+                input[type="email"]{
+                    width: 90%;
+                    margin-right: 0;
+                }
+                //estilizando o input submit da pagina
+                input[type="submit"]{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fylo_landing_page",
+  "version": "1.0.0",
+  "description": "O Fylo armazena todos os seus arquivos mais importantes em um local seguro. Acesse-os sempre que precisar, compartilhe e colabore com amigos, família e colegas de trabalho.",
+  "main": "./script/menu.js",
+  "scripts": {
+    "test": "landing page de um site Fylo"
+  },
+  "author": "herbert souza",
+  "license": "ISC",
+  "type": "module"
+}

@@ -1,0 +1,96 @@
+@import "variaveis.scss";
+
+//fazendo o estilo do footer
+footer{
+    padding: 7% 0 1% 0;
+    background: $azul_escuro_footer;
+    color: $gray;
+
+    img{
+        margin-left: 4%;
+    }
+}
+.container_footer{
+    width: 94%;
+    padding: 3% 3% 3% 3%;
+
+    .card_footer{
+        width: 100%;
+        .ul_footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 30px;
+            list-style: none;
+
+            li{
+                width: calc(100% / 5);
+                font: 400 16px 'Open Sans', sans-serif;
+                margin: 10px 0;
+
+                .card_text_footer{
+                    p{
+                        margin-left: 3%;
+                        width: 100%;
+                    }
+                    p::before{
+                        content: url("../images/icon-location.svg"); 
+                        margin-right: 20px;
+                        position: absolute;
+                        left: 2%;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $gray;
+
+                    &:hover{
+                        color: $white;
+                    }
+                    &:first-of-type::before{
+                        content: url("../images/icon-phone.svg");
+                        padding-right: 20px;
+                    }
+                    &:nth-of-type(2)::before{
+                        content: url("../images/icon-email.svg");
+                        padding-right: 20px;
+                    }
+                }
+                h5{
+                    font: normal 20px 'Barlow', sans-serif;
+                    margin-bottom: 10px;
+                }
+                ul{
+                    list-style: none;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media(max-width: 900px){
+    .container_footer{
+    
+        .card_footer{
+            width: 100%;
+            .ul_footer{
+                flex-direction: column;
+
+                li{
+                    width: 100%;
+                    .card_text_footer{
+                        width: 80%;
+                        margin-left: 6%;
+
+                        p::before{
+                            left: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

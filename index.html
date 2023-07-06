@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O Fylo armazena todos os seus arquivos mais importantes em um local seguro. Acesse-os sempre que precisar, compartilhe e colabore com amigos, família e colegas de trabalho. feito por herbert souza projeto real de frontendmentor.io">
+    <meta name="author" content="herbert souza">
+    <meta name="robots" content="index">
+    <title>Document</title>
+    <!--links de fora-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!--esse header tera display flex onde será centro no eixo X e no Y tera event-->
+        <div class="container_header">
+            <div class="card_logo_header">
+                <img src="images/logo.svg" alt="logo de nossa plataforma Fylo" title="logo Fylo" lang="pt-br">
+            </div>
+            <!--os links não terá efeito apenas a cor e o underline none -->
+            <div class="card_nav_bar">
+                <nav>
+                    <a href="">Features</a>
+                    <a href="">Team</a>
+                    <a href="">Sign in</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container_intro">
+                <div class="card_intro_img">
+                    <img src="images/illustration-intro.png" alt="intro do site" title="você pode fazer muitas coisas mas se tiver a ajuda de nossa equipe Fylo sua vida fica mas organizada">
+                </div>
+                <div class="card_conteudo">
+                    <h1>All your files in one secure location, accessible anywhere.</h1>
+
+                    <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+                </div>
+                <div class="card_conteudo_link">
+                    <a href="">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!--informação do site e os beneficios que ganhara usando nós-->
+        <section>
+            <div class="container_sobre">
+                <div class="card_sobre">
+                    <div class="box_img">
+                        <img src="images/icon-access-anywhere.svg" alt="">
+                    </div>
+                    <div class="box_text">
+                        <h3>Access your files, anywhere</h3>
+                        <p>The ability to use a smartphone, tablet, or computer to access your account means your 
+                        files follow you everywhere.</p>
+                    </div>
+                </div>
+                <div class="card_sobre">
+                    <div class="box_img">
+                        <img src="images/icon-security.svg" alt="">
+                    </div>
+                    <div class="box_text">
+                        <h3>Security you can trust</h3>
+                        <p>2-factor authentication and user-controlled encryption are just a couple of the security 
+                        features we allow to help secure your files.</p>
+                    </div>
+                </div>
+                <div class="card_sobre">
+                    <div class="box_img">
+                        <img src="images/icon-collaboration.svg" alt="">
+                    </div>
+                    <div class="box_text">
+                        <h3>Real-time collaboration</h3>
+                        <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
+                        No email attachments required.</p>
+                    </div>
+                </div>
+                <div class="card_sobre">
+                    <div class="box_img">
+                        <img src="images/icon-any-file.svg" alt="">
+                    </div>
+                    <div class="box_text">
+                       <h3>Store any type of file</h3> 
+                       <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+                        file types to be securely stored and shared.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produto">
+            <div class="container_produto">
+                <div class="card_img_produto">
+                    <img src="images/illustration-stay-productive.png" alt="">
+                </div>
+                <div class="card_produto_informacao">
+                    <div class="box_text">
+                        <h2>Stay productive, wherever you are</h2>
+                    </div>
+                    <div class="box_text">
+                        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+                        storage needs.</p>
+                    </div>
+                        <div class="box_text">
+                            <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+                            attachments required.</p>
+                        </div>
+                    
+                    <div class="box_text">
+                        <a href="">See how Fylo works</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--essa sessao tem todos os relatos de clientes sobre nossa plataforma Fylo-->
+        <section>
+            <div class="container_relato">
+                <div class="card_clientes">
+                    <div class="box_text_client">
+                        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                        become a well-oiled collaboration machine.</p>
+                    </div>
+                    <!--essa parte abrir um container dentro de outro container para que a foto do usuario e sua funsao pode-se ficar um do lado do outro sem que perde-se o responsivo todos os cards de clientes tera a mesma estrutura-->
+                    <div class="box_container_perfil">
+                        <div class="conteudo_img">
+                            <img src="images/profile-1.jpg" alt="">
+                        </div>
+                        <div class="box_conteudo_text">
+                            <h4>Satish Patel</h4>
+                            <p>Founder & CEO, Huddle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 2 de clientes-->
+                <div class="card_clientes">
+                    <div class="box_text_client">
+                        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                        become a well-oiled collaboration machine.</p>
+                    </div>
+                    <!--essa parte abrir um container dentro de outro container para que a foto do usuario e sua funsao pode-se ficar um do lado do outro sem que perde-se o responsivo todos os cards de clientes tera a mesma estrutura-->
+                    <div class="box_container_perfil">
+                        <div class="conteudo_img">
+                            <img src="images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="box_conteudo_text">
+                            <h4>Bruce McKenzie</h4>
+                            <p>Founder & CEO, Huddle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 3 de clientes-->
+                <div class="card_clientes">
+                    <div class="box_text_client">
+                        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                        become a well-oiled collaboration machine.</p>
+                    </div>
+                    <!--essa parte abrir um container dentro de outro container para que a foto do usuario e sua funsao pode-se ficar um do lado do outro sem que perde-se o responsivo todos os cards de clientes tera a mesma estrutura-->
+                    <div class="box_container_perfil">
+                        <div class="conteudo_img">
+                            <img src="images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="box_conteudo_text">
+                            <h4>Iva Boyd</h4>
+                            <p>Founder & CEO, Huddle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--essa sessao trata se de um input de acesso o intuito é fazer só o front end mas com futuros estudos podemos colocar um banco de dados para salvar o endereço de email e enviar uma mensagem via protocolo SMALL mas por agora será apenas um front end que presa no responsivo e elegancia-->
+
+        <section>
+            <div class="container_get">
+                <div class="card_get">
+                    <div class="box_text_get">
+                        <h2>Get early access today</h2>
+                        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+                        questions, our support team would be happy to help you.</p>
+                    </div>
+                    <div class="box_form">
+                        <form action="">
+                            <input type="email" id="email"
+                            placeholder="exemple@exemple.com" maxlength="40">
+                            <input type="submit" value="Get Started For Free">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logo.svg" alt="">
+        <div class="container_footer">
+
+            <div class="card_footer">
+                <ul class="ul_footer">
+                    <li>
+                        <div class="card_text_footer">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+                        <br>
+                    <a href="mailton:example@fylo.com">example@fylo.com</a>
+                    </li>
+                    <li><h5>About Us</h5>
+                        <ul>
+                            <li>Jobs</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><h5>Contact</h5></li>
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+           <!--<div class="card_footer">
+                <ul>
+                    <li><p>Contact Us</p></li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <div class="card_footer">
+                redes sociais
+            </div>--> 
+        </div>
+    </footer>
+
+</body>
+</html>

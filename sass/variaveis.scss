@@ -1,0 +1,38 @@
+
+//Fontes usadas no projeto
+
+/*fonte usada para Títulos, frases de chamariz, navegação no cabeçalho*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Raleway:wght@400;700;800&display=swap');
+
+//nome da font a sima 
+//font-family: 'Barlow', sans-serif;
+//font-family: 'Raleway', sans-serif;
+
+//fonte usada no corpo todo da pagina
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+
+//nome das fontes chamadas para o corpo da pagina
+
+//font-family: 'Barlow', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+
+
+$azul_escuro_main: hsl(218, 28%, 13%); //cor de fundo do main
+$azul_escuro_footer: hsl(216, 53%, 9%);
+
+$azul_escuro_do_depoimentos: hsl(219, 30%, 18%);
+
+
+//gradiente de toda a pagina
+
+$cian: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+
+$light_Red: hsl(0, 100%, 63%);//cor da mensagem de erro
+
+//cores naturais
+$white: hsl(0, 0%, 100%);
+
+$gray: rgb(194, 194, 194);
