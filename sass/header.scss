@@ -7,7 +7,7 @@
     background: $azul_escuro_do_depoimentos;
     padding: 1% 0;
 
-    .card_nav_bar{
+    #card_nav_bar{
         
         a{
             margin-left: 1rem;
@@ -74,13 +74,66 @@
     }
     //fechamento da class card link
 }
+#btn_menu{
+    display: none;
+}
 
+.hidden{
+    display: none;
+}
 @media(max-width: 800px){
+
+    //fazendo nav menu do responsivo mobile
+
     .container_header{
+        display: block;
+        //ajustando a img com o menu    
         .card_logo_header{
-            img{
-                width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            //menu estilizando o menu
+            .menu{
+                #btn_menu{
+                    display: inline;
+                    background: none;
+                    border: none;
+                }
             }
+        }
+        //alinhando o nav no centro da tela em screen mobile
+        #card_nav_bar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            //deslocando o nav com absolute e ajustando tamanho
+            nav{
+                position: absolute;
+                top: 80px;
+                background: black;
+                width: 80%;
+                padding: 5% 0;
+                border-radius: 10px;
+                box-shadow: 4px 4px 10px $gray_shadow;
+
+                //dando efeitos nos links
+                a{
+                display: block;
+                padding: 1rem;
+                text-align: center;
+                margin: 0;
+                color: $gray;
+
+                &:hover{
+                    background: $gray;
+                    color: $white;
+                }
+
+                }
+            }
+            
         }
     }
 

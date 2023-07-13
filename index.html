@@ -14,12 +14,20 @@
     <header>
         <!--esse header tera display flex onde será centro no eixo X e no Y tera event-->
         <div class="container_header">
+
             <div class="card_logo_header">
-                <img src="images/logo.svg" alt="logo de nossa plataforma Fylo" title="logo Fylo" lang="pt-br">
+                <div class="logo"><img src="images/logo.svg" alt="logo de nossa plataforma Fylo" title="logo Fylo" lang="pt-br"></div>
+
+                <!--esse button ficará visivel apenas para mobiles para fazer o responsivo e o menu nav-->
+                <div class="menu">
+                    <button id="btn_menu">
+                        <img src="images/icon-hamburger.svg" alt="menu do site">
+                    </button>
+                </div>
             </div>
-            <!--os links não terá efeito apenas a cor e o underline none -->
-            <div class="card_nav_bar">
-                <nav>
+            <!--esse card em desktop é usado o justify e em mobile será usado position absolute para fazer o menu nav -->
+            <div id="card_nav_bar">
+                <nav id="nav_bar" class="hidden">
                     <a href="">Features</a>
                     <a href="">Team</a>
                     <a href="">Sign in</a>
@@ -178,6 +186,7 @@
 
         <section>
             <div class="container_get">
+                
                 <div class="card_get">
                     <div class="box_text_get">
                         <h2>Get early access today</h2>
@@ -241,6 +250,10 @@
             </div>--> 
         </div>
     </footer>
-
+    <script src="script/menu.js"></script>
+    <noscript>
+        <h1>ERRO 404</h1>
+        <p>Ative seu javascript</p>
+    </noscript>
 </body>
 </html>
